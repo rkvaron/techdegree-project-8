@@ -6,9 +6,11 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url("svgs/background.svg");
 }
 
 #container {
+/*to make it mobile first, add this:   width: 60%;*/
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
@@ -44,6 +46,8 @@ header nav {
 header nav ul li {
   display: inline-block;
   margin-right: 20px;
+  color: #39ADD1;
+  font-weight: bold;
 }
 
 main {
