@@ -10,7 +10,6 @@ body {
 }
 
 #container {
-/*to make it mobile first, add this:   width: 60%;*/
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
@@ -28,10 +27,20 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  transition: transform .5s ease-in, color .5s ease-in ;
+}
+.icon {
+  fill:#39add1;
+  transition: transform .5s ease-in, fill .5s ease-in
 }
 
 a:hover {
   color: #111;
+  transform: scale(1.1);
+}
+a:hover .icon {
+    fill: #111;
+    transform: scale(1.1);
 }
 
 header {
@@ -47,7 +56,7 @@ header nav ul li {
   display: inline-block;
   margin-right: 20px;
   color: #39ADD1;
-  font-weight: bold;
+  font-size: .85em;
 }
 
 main {
@@ -63,4 +72,95 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+#logo {
+  width: 140px;
+  height: 120px;
+  display: none;
+}
+h1 {
+
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: .8em;
+}
+
+.dog {
+  display: block;
+  text-align:center;
+}
+
+.sable{
+  color: #b97f5b;
+  fill: #b97f5b;
+}
+
+.fawn {
+  color: #e9aa82;
+  fill: #e9aa82;
+}
+
+.red{
+  color: #834b29;
+  fill: #834b29;
+}
+
+.stone {
+  color: #52595f;
+  fill: #52595f;
+}
+
+/* Animation */
+@keyframes grow {
+    0% {
+    transform: scale(0);
+    }
+    50% {
+      transform: scale(.7);
+    }
+    100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  40% {
+    transform: rotate(375deg);
+  }
+  80% {
+    transform: rotate(355deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#logo:hover .paw {
+  transform-origin: 70px 70px;
+  animation: grow 1s ease-in backwards;
+}
+#logo:hover .letters {
+  transform-origin: 70px 70px;
+  animation: spin 1s 1.1s ease-out backwards;
+}
+
+/* Media Queries */
+@media(min-width:425px) {
+  #smallScreenLogo {
+    display:none;
+  }
+   #logo {
+    display: inline-block;
+  }
+  .dog {
+    display:inline-block;
+    padding: 10px;
+  }
 }
