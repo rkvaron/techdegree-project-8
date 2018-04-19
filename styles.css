@@ -77,11 +77,11 @@ footer {
 #logo {
   width: 140px;
   height: 120px;
-  display: none;
 }
-h1 {
+.letters {
+  visibility: hidden;
+}
 
-}
 
 h3 {
   margin: 0;
@@ -152,12 +152,9 @@ h3 {
 }
 
 /* Media Queries */
-@media(min-width:425px) {
-  #smallScreenLogo {
-    display:none;
-  }
-   #logo {
-    display: inline-block;
+@media (min-width: 525px) {
+ .letters {
+    visibility: visible;
   }
   .dog {
     display:inline-block;
