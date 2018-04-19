@@ -152,7 +152,7 @@ h3 {
 }
 
 /* Media Queries */
-@media (min-width: 525px) {
+@media (min-width: 425px) {
  .letters {
     visibility: visible;
   }
