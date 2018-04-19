@@ -21,6 +21,7 @@ p {
   margin: 35px auto 0;
   line-height: 2em;
   text-align: left;
+  font-size: 16px;
 }
 
 a {
@@ -81,8 +82,9 @@ footer {
 .letters {
   visibility: hidden;
 }
+.logo-text {
 
-
+}
 h3 {
   margin: 0;
   font-family: 'Roboto Slab', serif;
@@ -156,6 +158,10 @@ h3 {
  .letters {
     visibility: visible;
   }
+  .logo-text {
+    display: none;
+  }
+
   .dog {
     display:inline-block;
     padding: 10px;
